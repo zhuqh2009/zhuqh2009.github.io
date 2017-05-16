@@ -4,4 +4,4 @@ name: 好记性不如烂笔头
 
 baseurl: "home"
 
-
+theme: jekyll-theme-slate
