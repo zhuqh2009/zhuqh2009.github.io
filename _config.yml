@@ -1,7 +1,4 @@
+permalink: /:title
 
-name: 好记性不如烂笔头
-
-
-baseurl: "home"
-
-
+title: ioend.com
+url: http://www.ioend.com
