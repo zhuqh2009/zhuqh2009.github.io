@@ -1,5 +1,6 @@
 ---
 layout: default
+titile: 好记性不如烂笔头
 ---
 
 <body>
