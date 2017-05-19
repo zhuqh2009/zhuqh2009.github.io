@@ -162,7 +162,7 @@ a.external:hover {
   position: fixed;
   top: 0;
   left: 0;
-  width: 30%;
+  width: 20%;
   height: 100%;
   max-width: 500px;
   background: #59a0b0;
@@ -464,7 +464,6 @@ a.external:hover {
   -moz-background-size: 20%;
   background-size: 20%;
   background-position: 50% 50%;
-  background: #38658c;
   background: -webkit-radial-gradient(top left, #5d3571, #38658c);
   background: -moz-radial-gradient(top left, #5d3571, #38658c);
   background: -o-radial-gradient(top left, #5d3571, #38658c);
