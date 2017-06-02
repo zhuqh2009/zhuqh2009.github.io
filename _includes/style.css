@@ -165,7 +165,7 @@ a.external:hover {
   width: 20%;
   height: 100%;
   max-width: 500px;
-  background: #59a0b0;
+  background: #24292e;
 }
 @media screen and (max-width: 767px) {
   .index-wrapper .aside {
@@ -180,6 +180,11 @@ a.external:hover {
   margin-top: 70%;
   text-align: center;
   width: 100%;
+}
+.info-card .arc-list{
+  position: relative;
+  margin-left: 5px;
+  text-align: left;
 }
 @media screen and (max-width: 767px) {
   .index-wrapper .info-card {
@@ -464,11 +469,6 @@ a.external:hover {
   -moz-background-size: 20%;
   background-size: 20%;
   background-position: 50% 50%;
-  background: -webkit-radial-gradient(top left, #5d3571, #38658c);
-  background: -moz-radial-gradient(top left, #5d3571, #38658c);
-  background: -o-radial-gradient(top left, #5d3571, #38658c);
-  background: -ms-radial-gradient(top left, #5d3571, #38658c);
-  background: radial-gradient(to bottom right, #5d3571, #38658c);
 }
 #disqus_container {
   font-size: 12px;

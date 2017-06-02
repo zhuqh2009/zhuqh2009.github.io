@@ -8,12 +8,15 @@ titile: 好记性不如烂笔头
     <div class="aside">
       <div class="info-card">
         <h1>ioend</h1>
-		<ul>"
-		    {\% for category in site.categories %}
-		    <li><a href="/categories/{{ category | first }}/" title="view all
-		posts">{{ category | first }} {{ category | last | size }}</a>
-		    </li>
-		    {\% endfor %}
+		<ul>
+		  {% for category in site.categories %}
+			<h2>{{ category | first }}({{ category | last | size }})</h2>
+			<ul class="arc-list">
+			    {% for post in category.last %}
+				<li>{{ post.date | date:"%Y/%m/%d"}}<a href="{{ post.url }}">{{ post.title }}</a></li>
+			    {% endfor %}
+			</ul>
+		 {% endfor %}
 		</ul>
       </div>
       <div id="particles-js"></div>
