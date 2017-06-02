@@ -98,5 +98,3 @@ category: blog
     "ensure_newline_at_eof_on_save": true,
 
 所以，请遵守规范。
-
-[BeiYuu]:    http://beiyuu.com  "BeiYuu"

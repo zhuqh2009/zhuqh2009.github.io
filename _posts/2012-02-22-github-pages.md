@@ -331,36 +331,3 @@ Google的高亮插件使用也比较方便，只需要在`<pre>`的标签上加�
 
 还有一个是关于`category`的问题，根据`YAML`的语法，我们在文章头部可以定义文章所属的类别，也可以定义为`category:[blog,rss]`这样子的多类别，我在本地试一切正常，但是push到GitHub之后，就无法读取了，真让人着急，没有办法，只能采用别的办法满足我的需求了。这里还有一篇[Jekyll 本地调试之若干问题][18]，安装中如果有其他问题，也可以对照参考一下。
 
-## 结语
-如果你跟着这篇不那么详尽的教程，成功搭建了自己的博客，恭喜你！剩下的就是保持热情的去写自己的文章吧。
-
-
-[BeiYuu]:    http://beiyuu.com  "BeiYuu"
-[Github]:   http://github.com "Github"
-[jQuery]:   https://github.com/jquery/jquery "jQuery@github"
-[Twitter]:  https://github.com/twitter/bootstrap "Twitter@github"
-[Github Pages]: http://pages.github.com/ "Github Pages"
-[Godaddy]:  http://www.godaddy.com/ "Godaddy"
-[Jekyll]:   https://github.com/mojombo/jekyll "Jekyll"
-[DNSPod]:   https://www.dnspod.cn/ "DNSPod"
-[Disqus]: http://disqus.com/
-[多说]: http://duoshuo.com/
-[1]:    {{ page.url}}  ({{ page.title }})
-[2]: http://markdown.tw/    "Markdown语法"
-[3]:    http://baike.baidu.com/view/65575.htm "A记录"
-[4]: http://progit.org/book/zh/ "Pro Git中文版"
-[5]: http://help.github.com/mac-set-up-git/ "Mac下Git安装"
-[6]: http://help.github.com/ssh-key-passphrases/
-[7]: http://beiyuu.github.io
-[8]: https://github.com/mojombo/jekyll/blob/master/README.textile
-[9]: https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter
-[10]: https://github.com/mojombo/jekyll/wiki/configuration
-[11]: https://github.com/beiyuu/Github-Pages-Example
-[12]: http://docs.disqus.com/developers/universal/
-[13]: http://mihai.bazon.net/projects/javascript-syntax-highlighting-engine
-[14]: http://code.google.com/p/google-code-prettify/
-[15]: https://github.com/mojombo/jekyll/wiki/Install
-[16]: https://rvm.io/rvm/install/
-[17]: http://jekyllbootstrap.com/
-[18]: http://chxt6896.github.com/blog/2012/02/13/blog-jekyll-native.html
-[a-record]: https://help.github.com/articles/my-custom-domain-isn-t-working
