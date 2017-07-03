@@ -101,5 +101,14 @@ insert into global (name, value) values (#{keyName}, LAST_INSERT_ID(1)) ON DUPLI
 验证： 可以借助java.util.concurrent.CountDownLatch 创建几百个线程进行测试。
 
 ```
+#### 4.4  mysql 连接会话变量
 
+其实上边的LAST_INSERT_ID()，对应的就是一个连接的变量last_insert_id，可以通过SHOW VARIABLES看到
+
+上边的语句也可以替换成用用户变量定义的形式
+
+```json
+insert into global (name, value) values (#{keyName}, (@InsertedId:=1)) ON DUPLICATE KEY UPDATE value=@InsertedId:=value+1 ; select @InsertedId
+
+```
 
