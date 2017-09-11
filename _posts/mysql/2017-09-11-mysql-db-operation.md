@@ -1,13 +1,15 @@
+
 ---
 layout:     post
-title:      MySqlÊý¾Ý¿âÊ¹ÓÃÖÐ³£¼û²Ù×÷ÃüÁî¼òµ¥¼ÇÂ¼
+title:      MySqlæ•°æ®åº“ä½¿ç”¨ä¸­å¸¸è§æ“ä½œå‘½ä»¤ç®€å•è®°å½•
 category: blog
-description: MySQL¿ª·¢¹ÜÀíÖÐ³£ÓÃmySqlÃüÁî¼òµ¥¼ÇÂ¼
+description: MySQLå¼€å‘ç®¡ç†ä¸­å¸¸ç”¨mySqlå‘½ä»¤ç®€å•è®°å½•
 ---
+
 
 ### mysql CMD
 
-### mysql ´´½¨ÐÂÓÃ»§Êý¾Ý¿âÈ¨ÏÞ
+### mysql åˆ›å»ºæ–°ç”¨æˆ·æ•°æ®åº“æƒé™
 
 ```
 >mysql -u root -p
@@ -15,49 +17,49 @@ description: MySQL¿ª·¢¹ÜÀíÖÐ³£ÓÃmySqlÃüÁî¼òµ¥¼ÇÂ¼
 >insert into mysql.user(Host, User, Password) values('localhost', "testuser", password('xx'));
 >flush privileges;
 
-//¸øÓÃ»§ÊÚÈ¨Êý¾Ý¿â
+//ç»™ç”¨æˆ·æŽˆæƒæ•°æ®åº“
 >create database testDb;
 >grant all privileges on testDb.* to 'testuser'@'localhost' identified by 'xx'; 
-//ÓÃ»§²»´æÔÚ×Ô¶¯´´½¨xxÎªÃÜÂëµÄtestuserÓÃ»§
+//ç”¨æˆ·ä¸å­˜åœ¨è‡ªåŠ¨åˆ›å»ºxxä¸ºå¯†ç çš„testuserç”¨æˆ·
 >flush privileges;
 
-//²é¿´ÓÃ»§Ö÷»úÊý¾Ý¿âÈ¨ÏÞ
->show grants;  //²é¿´µ±Ç°Á¬½ÓÓÃ»§ËùÓÐÈ¨ÏÞ
+//æŸ¥çœ‹ç”¨æˆ·ä¸»æœºæ•°æ®åº“æƒé™
+>show grants;  //æŸ¥çœ‹å½“å‰è¿žæŽ¥ç”¨æˆ·æ‰€æœ‰æƒé™
 >show grants for 'testuser'@'%';  
 
-//³·ÏúÈ¨ÏÞ
+//æ’¤é”€æƒé™
 >revoke all on *.* from 'testuser'@'%';
 ```
 
-### MySQLÖ´ÐÐsqlÎÄ¼þ
+### MySQLæ‰§è¡Œsqlæ–‡ä»¶
 ```
 >source mysqlfile.sql
 ```
 
-###²é¿´±í½á¹¹ÃüÁî
+###æŸ¥çœ‹è¡¨ç»“æž„å‘½ä»¤
 ```
 >desc db.table;
-//²é¿´±íµÄ´´½¨Óï¾ä
+//æŸ¥çœ‹è¡¨çš„åˆ›å»ºè¯­å¥
 >show create table table_name;
 >show create database testDb;
 ```
 
 ### mysql Dump
 ```
-shell ÏÂÖ´ÐÐmysqldump³ÌÐò
-±¸·ÝÊý¾Ý¿â 
+shell ä¸‹æ‰§è¡Œmysqldumpç¨‹åº
+å¤‡ä»½æ•°æ®åº“ 
 > mysqldump -h host -u root -p dbname >dbname_backup.sql 
-»Ö¸´Êý¾Ý¿â 
+æ¢å¤æ•°æ®åº“ 
 > mysqladmin -h myhost -u root -p create dbname 
 > mysqldump -h host -u root -p dbname < dbname_backup.sql 
-Èç¹ûÖ»ÏëÐ¶³ö½¨±íÖ¸Áî£¬ÔòÃüÁîÈçÏÂ£º 
+å¦‚æžœåªæƒ³å¸å‡ºå»ºè¡¨æŒ‡ä»¤ï¼Œåˆ™å‘½ä»¤å¦‚ä¸‹ï¼š 
 > mysqladmin -u root -p -d databasename > a.sql 
-Èç¹ûÖ»ÏëÐ¶³ö²åÈëÊý¾ÝµÄsqlÃüÁî£¬¶ø²»ÐèÒª½¨±íÃüÁî£¬ÔòÃüÁîÈçÏÂ£º 
+å¦‚æžœåªæƒ³å¸å‡ºæ’å…¥æ•°æ®çš„sqlå‘½ä»¤ï¼Œè€Œä¸éœ€è¦å»ºè¡¨å‘½ä»¤ï¼Œåˆ™å‘½ä»¤å¦‚ä¸‹ï¼š 
 > mysqladmin -u root -p -t databasename > a.sql 
 ```
 
 
-### ²é¿´±àÂëÐÅÏ¢
+### æŸ¥çœ‹ç¼–ç ä¿¡æ¯
 ```
 >show variables like 'char%';
 ```
