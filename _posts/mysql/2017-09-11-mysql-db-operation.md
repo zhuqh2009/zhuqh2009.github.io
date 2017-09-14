@@ -53,9 +53,9 @@ shell 下执行mysqldump程序
 > mysqladmin -h myhost -u root -p create dbname 
 > mysqldump -h host -u root -p dbname < dbname_backup.sql 
 如果只想卸出建表指令，则命令如下： 
-> mysqladmin -u root -p -d databasename > a.sql 
+> mysqldump -u root -p -d databasename > a.sql 
 如果只想卸出插入数据的sql命令，而不需要建表命令，则命令如下： 
-> mysqladmin -u root -p -t databasename > a.sql 
+> mysqldump -u root -p -t databasename > a.sql 
 ```
 
 
