@@ -18,3 +18,8 @@ description: Collection of all kinds of java framework sites
 
 <a href="http://www.mybatis.org/mybatis-3/index.html#">http://www.mybatis.org/mybatis-3/index.html#</a>
 
+
+### Dubbo
+
+<a href="https://dubbo.gitbooks.io/dubbo-user-book/">https://dubbo.gitbooks.io/dubbo-user-book/</a>
+
