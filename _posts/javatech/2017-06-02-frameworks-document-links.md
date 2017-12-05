@@ -11,6 +11,9 @@ description: Collection of all kinds of java framework sites
 
 <a href="http://docs.spring.io/spring/docs/5.0.0.RC1/spring-framework-reference/core.html#aop">http://docs.spring.io/spring/docs/5.0.0.RC1/spring-framework-reference/core.html#aop</a>
 
+#### aop pointcut expression
+<a href="http://www.baeldung.com/spring-aop-pointcut-tutorial">http://www.baeldung.com/spring-aop-pointcut-tutorial</a>
+
 ### MyBatis3.0 中文DOC
 <a href="http://www.mybatis.org/mybatis-3/zh/index.html">http://www.mybatis.org/mybatis-3/zh/index.html</a>
 
