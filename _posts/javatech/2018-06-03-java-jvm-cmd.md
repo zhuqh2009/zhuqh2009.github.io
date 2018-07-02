@@ -77,6 +77,9 @@ dump:
 查看线程Thread状况常用命令：
 ```
 ```
+奔溃dump:
+java -Xms10M -Xmx10M -Xmn2M -XX:SurvivorRatio=8 -XX:+HeapDumpOnOutOfMemoryError 
+-XX:HeapDumpPath=/heapdump/oom.txt   -XX:+PrintGCDetails -Xloggc:/heapdump/gc.txt
 
 ###  Tools
 
