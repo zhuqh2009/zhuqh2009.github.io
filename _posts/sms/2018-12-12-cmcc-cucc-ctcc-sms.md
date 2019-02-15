@@ -1,10 +1,9 @@
 ---
 layout:    post
 title:     移动联通电信三大运营商错误码收集
-category: blog
+category:  blog
 description:     运营商 cmpp, sgip错误码
 ---
-
 
 ### 错误码
 

@@ -5,7 +5,6 @@ category: blog
 description: 从SpringBoot观察tomcat
 ---
 
-
 ### JVM线程、tomcat线程
 
 JVM线程include(user thread, daemon thread);
